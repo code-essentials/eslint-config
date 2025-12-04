@@ -16,11 +16,11 @@
     "build:debug": "tsc -p tsconfig.debug.json",
     "build": "npm run build:prod",
     "postbuild": "npm run lint:run",
-    "pretest": "npm run build:debug",
+    "pretest": "npm run build:prod",
     "test": "npm run test:run",
     "pretest:run": "",
     "test:run": "npm run lint:run",
-    "prelint": "npm build",
+    "prelint": "npm run build:prod",
     "lint": "npm run lint:run",
     "lint:run": "eslint .",
     "prepublishOnly": "npm test && npm run build"
