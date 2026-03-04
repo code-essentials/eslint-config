@@ -32,4 +32,17 @@ export const config = defineConfig(
             },
         },
     })),
+    {
+        files: ['**/*.ts', '**/*.tsx'],
+        rules: {
+            '@typescript-eslint/strict-boolean-expressions': ['error', {
+                allowString: false,
+                allowNumber: false,
+                allowNullableObject: true,
+                allowNullableBoolean: false,
+                allowNullableString: false,
+                allowNullableNumber: false,
+            }],
+        },
+    },
 )
