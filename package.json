@@ -12,7 +12,7 @@
     "clean": "rm -rf dist",
     "prebuild:prod": "npm run clean",
     "prebuild:debug": "npm run clean",
-    "build:prod": "tsc  -p tsconfig.prod.json",
+    "build:prod": "tsc -p tsconfig.prod.json",
     "build:debug": "tsc -p tsconfig.debug.json",
     "build": "npm run build:prod",
     "postbuild": "npm run lint:run",
@@ -26,17 +26,17 @@
     "prepublishOnly": "npm test && npm run build"
   },
   "dependencies": {
-    "@eslint/js": "^9.39.1",
-    "eslint": "^9.39.1",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.1"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.6.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.1"
   },
   "peerDependencies": {
-    "@tsconfig/node24": "^24.0.3",
+    "@tsconfig/node24": "^24.0.4",
     "@tsconfig/strictest": "^2.0.8"
   },
   "devDependencies": {
-    "@code-essentials/tsconfig": "^1.2.6",
+    "@code-essentials/tsconfig": "^1.2.7",
     "@types/node": "^24.10.1"
   },
   "author": {
